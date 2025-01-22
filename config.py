@@ -7,8 +7,8 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = "12380656"
-API_HASH = "d927c13beaaf5110f25c505b7c071273"
+API_ID = "27934563"
+API_HASH = "50516d67db72b07709904734c69a658b"
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = "7788838360:AAEpYefzNWRbB7wAIUzfbBNVNK3eYJpfLv0"
@@ -25,7 +25,7 @@ ADS_MODE = getenv("ADS_MODE", None)
 LOGGER_ID = -1002251188406
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = 725224979
+OWNER_ID = 7506888340
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
