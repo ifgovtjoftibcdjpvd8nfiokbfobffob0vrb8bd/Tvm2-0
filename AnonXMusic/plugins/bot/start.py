@@ -84,6 +84,20 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
+        baby = await message.reply_text(f"**▒▒▒▒▒▒▒▒▒▒ 0%**")
+        await baby.edit_text(f"**█▒▒▒▒▒▒▒▒▒ 10%**")
+        await baby.edit_text(f"**██▒▒▒▒▒▒▒▒ 20%**")
+        await baby.edit_text(f"**███▒▒▒▒▒▒▒ 30%**")
+        await baby.edit_text(f"**████▒▒▒▒▒▒ 40%**")
+        await baby.edit_text(f"**█████▒▒▒▒▒ 50%**")
+        await baby.edit_text(f"**██████▒▒▒▒ 60%**")
+        await baby.edit_text(f"**███████▒▒▒ 70%**")
+        await baby.edit_text(f"**████████▒▒ 80%**")
+        await baby.edit_text(f"**█████████▒ 90%**")
+        await baby.edit_text(f"**██████████ 100%**")
+        await baby.edit_text(f"**❖ 𝙅𝙖𝙯𝙞 𝙓 𝙈𝙪𝙨𝙞𝙘 𝙎𝙩𝙖𝙧𝙩𝙚𝙙..🤍**")
+        await baby.delete()
+        
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
