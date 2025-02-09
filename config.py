@@ -11,7 +11,7 @@ API_ID = "27934563"
 API_HASH = "50516d67db72b07709904734c69a658b"
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = "7788838360:AAEpYefzNWRbB7wAIUzfbBNVNK3eYJpfLv0"
+BOT_TOKEN = "8004440473:AAFViflUJAPzr0H_4VlUgQKy6KOEsT19Iwg"
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = "mongodb+srv://architect04:architect04@cluster0.fylqb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -22,10 +22,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60000))
 ADS_MODE = getenv("ADS_MODE", None)
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = -1002251188406
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002445002370"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = 7506888340
+OWNER_ID = int(getenv("OWNER_ID", 7823100937))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,15 +35,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Markus04p/Test",
+    "https://github.com/Block2002/Samrio",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/denkimusicbot01")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/denkimusicbot01")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Jazi_X_Channel")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Jazi_X_Channel")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", None))
@@ -65,7 +65,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = "BQC86fAAFnmCCTw0SVu3ReuylXBtynQPMOFEROLI1-K_i9liGvyIRGsJMJ5AjdkqtKgmL21lMpDSBzAs0-Tm4Trw8DTbMfJvcml4YMaaTRL6lfblPSRyDyjF3vY8PCZaBvQvu0eimuN-HWRGznLo3MyUwX4ZSdWpNsH4luthc33IRmTx0tXefX0C_iOuAniyIkvC1L0NG7nOyQnS3HM0nkYnhIkqAjGsTwZhFDazWcTwt9tZgXxjrtCgm7FbmhrkDVnVDw-PjeAe5bmySBZUXLPcSy6bEi_3AhMvLpOk3yF7irr9UC5r1icN5VlNJbSP8YsFJDU6U_uNdq1oJjL84KUheI5SdQAAAAHD41iOAA"
+STRING1 = "BQC86fAAsMvTDNGAxIA6qYawMoSW4gieFTs2SiiNFeoD_KKvLghieiVMjqlLl1LzKwlXMGMo6EDfGidz0idiBzEEU7Ng0-SOJHVicm_KrwNOSIXgJVqwDtj9ss_5b-M4yhckA1Q-YnQr6leZ6A4b7bOyV0efYW4ycMajkkIjbhUun58e_KddizLnZPa25dRujnkeYLGF4-FKoRyQck1QNF3riKWxxSm0DxtLn6J_CchR6W7OoAjD_ABTlmKAoieZscpmrC8aJYOCUSxp7a6iWsUnrLO-SO_wgm_1F01xlSMB0AJjR1XTHxmSmhWmhVMzOIwLJRmBEorOAye43022nrjVM4sP4gAAAAHZ523uAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -81,13 +81,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/4bff7df05636d1cca7532.jpg"
+    "START_IMG_URL", "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/y8q30a.jpg"
+    "PING_IMG_URL", "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://graph.org/file/15606f735b1e4e3c98e5e.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
+STATS_IMG_URL = "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
 TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
