@@ -368,8 +368,11 @@ class YouTubeAPI:
                 "postprocessors": [
                     {
                         "key": "FFmpegExtractAudio",
-                        "preferredcodec": "mp3",
-                        "preferredquality": "192",
+                        "preferredcodec": "mp3",  
+                        "preferredquality": "320",
+                        "audio_bitrate": "512k",    
+                        "audio_channels": 2,
+                        "audio_sample_rate": "44100",
                     }
                 ],
             }
