@@ -95,7 +95,7 @@ async def start_pm(client, message: Message, _):
         await baby.edit_text(f"**████████▒▒ 80%**")
         await baby.edit_text(f"**█████████▒ 90%**")
         await baby.edit_text(f"**██████████ 100%**")
-        await baby.edit_text(f"**❖ 𝙅𝙖𝙯𝙞 𝙓 𝙈𝙪𝙨𝙞𝙘 𝙎𝙩𝙖𝙧𝙩𝙚𝙙..🤍**")
+        await baby.edit_text(f"**𓆩♱ 𝙅𝙖𝙯𝙞 𝙓 𝙈𝙪𝙨𝙞𝙘 𝙎𝙩𝙖𝙧𝙩𝙚𝙙..🤍**")
         await baby.delete()
         
         await message.reply_photo(
