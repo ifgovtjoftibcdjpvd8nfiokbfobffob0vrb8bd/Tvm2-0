@@ -7,25 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = "27934563"
-API_HASH = "50516d67db72b07709904734c69a658b"
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = "8004440473:AAG5BESHY2eHonzjfxnhMC5g4r5DeufEOO8"
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = "mongodb+srv://jazibot02:jazibot02@cluster0.s7fhq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60000))
-
-# Set this to true if you want post ads automatically
-ADS_MODE = getenv("ADS_MODE", None)
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002266615669"))
+LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7057381827))
+OWNER_ID = int(getenv("OWNER_ID", 1356469075))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,18 +32,18 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Block2002/Samrio",
+    "https://github.com/AnonymousX1025/AnonXMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Jazi_sam")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Jazi_sam")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", None))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -65,7 +62,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = "BQC86fAAgi2DrWAiXvjz2Fmjmgy85V64RCf78AsKF2hXumREWkyv-E_rxUFmtTguGnX67caTTnvreX4AG7JVzVV0E0gr_esaMQ4PG-d5CBOgRHfCqEwWNAuE9LXxari-fL4OM2hm_DGTcHPGBm5HfImDq6w1yiLMN1gh7N51VCJSoxlqvauLzj9kWnvVQ4gvxDBGPIjD8-KngBZNRce9wMhupQG7WrdkamRh_qTO99x2Czo3cAq3G13jKgKTnbCK_4lW2_Subt56vUEnuHZzRjLADc4PwWoEbkwzlbBWYGc9Qcx0N_HwqHik-JFOXoSqCZ9F6BIZwL-FhiqWbYuLnuUOpZVTQAAAAAHWSSZLAA"
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -81,13 +78,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
+    "START_IMG_URL", "https://te.legra.ph/file/25efe6aa029c6baea73ea.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
+    "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
-STATS_IMG_URL = "https://graph.org/file/dcbbadea8f8594842b042-3c21359f563dbd5643.jpg"
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
